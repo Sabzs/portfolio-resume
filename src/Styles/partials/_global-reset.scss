@@ -1,0 +1,46 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+a,
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  color: #323232;
+}
+
+p {
+  text-decoration: none;
+}
+// img {
+//   max-width: 100%;
+// }
+body {
+  font-size: 1rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100vh;
+
+  background-color: #ffdee9;
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}

@@ -1,0 +1,16 @@
+.navBar {
+  height: 100vh;
+  &__profile-pic {
+    width: 100%;
+    text-align: center;
+    object-fit: contain;
+    margin-top: 1rem;
+    border-bottom: 1px solid $global-border-2;
+    img {
+      width: 70%;
+      border-radius: 100%;
+      border: 5px solid $global-border-1;
+      margin-bottom: 1rem;
+    }
+  }
+}

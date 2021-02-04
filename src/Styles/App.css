@@ -1,0 +1,88 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a,
+ul {
+  text-decoration: none;
+  list-style-type: none;
+  color: #323232;
+}
+
+p {
+  text-decoration: none;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "M PLUS Rounded 1c", sans-serif;
+  scroll-behavior: smooth;
+  width: 100%;
+  height: 100vh;
+  background-color: #ffdee9;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffdee9), to(#b5fffc));
+  background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
+}
+
+.App__sidebar {
+  width: 16%;
+  height: 100vh;
+  position: fixed;
+  z-index: 11;
+  border-right: 1px solid #9dbdd6;
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+
+.App__main-content {
+  width: 84%;
+  margin-left: 16%;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  position: relative;
+}
+
+.navBar {
+  height: 100vh;
+}
+
+.navBar__profile-pic {
+  width: 100%;
+  text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-top: 1rem;
+  border-bottom: 1px solid #9dbdd6;
+}
+
+.navBar__profile-pic img {
+  width: 70%;
+  border-radius: 100%;
+  border: 5px solid #afc3da;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=App.css.map */
