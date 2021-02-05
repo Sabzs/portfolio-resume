@@ -1,0 +1,41 @@
+.homePage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+
+  &__hero-header {
+    color: $secondary-text-color;
+    text-align: center;
+    font-size: calc(3rem + ((1vw - 7.68px) * 0.6944));
+
+    span {
+      color: $primary-text-color;
+    }
+  }
+  &__brief-about {
+    text-align: center;
+    color: $secondary-text-color;
+  }
+  &__icons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 0;
+  }
+  &__icons {
+    margin-right: 1rem;
+
+    .fa-linkedin,
+    .fa-github {
+      font-size: calc(2.5rem + ((1vw - 7.68px) * 0.6944));
+    }
+    .fa-linkedin:hover {
+      color: $linkedIn-hover;
+    }
+    .fa-github:hover {
+      color: $gitHub-hover;
+    }
+  }
+}
