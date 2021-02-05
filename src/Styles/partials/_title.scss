@@ -1,0 +1,41 @@
+.Title {
+  text-transform: uppercase;
+  font-size: calc(2rem + ((1vw - 7.68px) * 0.6944));
+  color: #fff;
+  position: relative;
+  padding-bottom: 1rem;
+  // letter-spacing: 0.1875rem;
+  letter-spacing: 0.125rem;
+
+  &::before {
+    content: "";
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    top: 57%;
+    background-color: #0381ff38;
+    width: 6rem;
+    height: 0.3rem;
+    border-radius: 3.125rem;
+  }
+  &::after {
+    content: "";
+    bottom: 0;
+    position: absolute;
+    left: 0;
+    top: 57%;
+    background-color: $global-blue-color;
+    opacity: 0.8;
+    width: 3rem;
+    height: 0.3rem;
+    border-radius: 3.125rem;
+  }
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    font-size: calc(3rem + ((1vw - 7.68px) * 0.6944));
+    opacity: 0.06;
+  }
+}
