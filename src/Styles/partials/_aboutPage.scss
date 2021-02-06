@@ -1,0 +1,14 @@
+.aboutPage {
+  &__skills-type-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 2rem 0;
+    column-gap: 2rem;
+    row-gap: 1rem;
+  }
+  &__services-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem;
+  }
+}
