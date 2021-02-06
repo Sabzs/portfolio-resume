@@ -31,6 +31,9 @@ ul {
 p {
   text-decoration: none;
 }
+span {
+  color: #0f1a23;
+}
 // img {
 //   max-width: 100%;
 // }
@@ -39,7 +42,8 @@ body {
   font-family: "M PLUS Rounded 1c", sans-serif;
   scroll-behavior: smooth;
   width: 100%;
-  height: 100vh;
+  height: auto;
+  color: #2d506b;
 
   background-color: #ffdee9;
   background-image: linear-gradient(0deg, #ffdee9 0%, #b5fffc 100%);
