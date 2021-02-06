@@ -1,0 +1,36 @@
+.skillsSection {
+  margin: 1.5rem;
+
+  &__skill-container {
+    margin: 0;
+  }
+
+  &__skill-title {
+    font-size: calc(1.3rem + ((1vw - 7.68px) * 0.6944));
+    font-weight: 400;
+  }
+  &__skill-bar {
+    display: flex;
+    align-items: center;
+  }
+  &__skill-text {
+    font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
+  }
+  &__skill-progress {
+    width: 100%;
+  }
+  &__progress {
+    width: 100%;
+    height: 0.5rem;
+    margin-left: 1rem;
+    background-color: #b5fffc;
+    position: relative;
+  }
+  &__inner-progress {
+    position: absolute;
+    background-color: $global-border-2;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+  }
+}
