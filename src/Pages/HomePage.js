@@ -13,8 +13,8 @@ function HomePage() {
         </p>
       </div>
       <div className="homePage__icons-container" >
-        <Link className="homePage__icons" ><i className="fab fa-linkedin"></i></Link>
-        <Link className="homePage__icons" ><i className="fab fa-github"></i></Link>
+        <Link to="/" className="homePage__icons" ><i className="fab fa-linkedin"></i></Link>
+        <Link to="/" className="homePage__icons" ><i className="fab fa-github"></i></Link>
       </div>
 
 
