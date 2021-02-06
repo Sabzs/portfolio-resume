@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
-import ProfilePic from "../assets/images/sabzs-profile-pic.jpg"
+import ProfilePic from "../assets/images/profile-navbar.jpg"
+
 
 function NavBar() {
   return (
@@ -21,7 +22,7 @@ function NavBar() {
             <NavLink to="/portfolios" activeClassName="active" >Portfolios</NavLink>
           </li>
           <li className="navBar__nav-item" >
-            <NavLink to="/blog" activeClassName="active" >Blogs</NavLink>
+            <NavLink to="/blogs" activeClassName="active" >Blogs</NavLink>
           </li>
           <li className="navBar__nav-item" >
             <NavLink to="/contact" activeClassName="active" >Contact</NavLink>
