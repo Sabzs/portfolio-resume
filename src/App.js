@@ -5,7 +5,6 @@ import { Switch, Route, } from 'react-router-dom';
 import './Styles/App.css';
 import AboutPage from './Pages/AboutPage';
 import PortfoliosPage from './Pages/PortfoliosPage';
-
 import ContactPage from './Pages/ContactPage';
 import BlogsPage from './Pages/BlogsPage';
 
