@@ -66,6 +66,10 @@
       }
     }
   }
+  .active {
+    background-color: $active-link-color;
+  }
+
   &__footer {
     width: 100%;
     border-top: 1px solid $global-border-2;
@@ -74,8 +78,5 @@
       text-align: center;
       padding: 1rem 0;
     }
-  }
-  .active {
-    background-color: $active-link-color;
   }
 }
