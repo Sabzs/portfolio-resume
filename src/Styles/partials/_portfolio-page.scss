@@ -1,0 +1,45 @@
+.portfolioPage {
+  width: 100%;
+
+  // &__portfolio-title {}
+  &__porfolio-content {
+    width: 100%;
+    margin: 3.5rem 0;
+  }
+}
+
+.portCategories {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+  margin-bottom: 2rem;
+  &__filter-btn {
+    padding: 0.6rem;
+    margin: 0.5rem;
+    width: 8rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: rgba(3, 129, 255, 0.281);
+    border: 1px solid #b5fffc;
+    border-radius: 0 1rem;
+
+    font-size: calc(0.8125rem + ((1vw - 7.68px) * 0.6944));
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      background-color: $primary-text-color;
+      color: #fff;
+    }
+    &:active {
+      background-color: $secondary-text-color;
+      color: #fff;
+    }
+    &:focus {
+      background-color: $secondary-text-color;
+      color: #fff;
+    }
+  }
+}
