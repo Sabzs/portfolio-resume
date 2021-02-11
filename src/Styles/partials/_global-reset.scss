@@ -60,3 +60,16 @@ body::-webkit-scrollbar-thumb {
 body::-webkit-scrollbar-track {
   background-color: #ffdee9;
 }
+
+//===//
+//medium-screen==//
+@media screen and (max-width: 62.5rem) {
+  html {
+    font-size: 80%;
+  }
+}
+@media screen and (max-width: 90rem) {
+  html {
+    font-size: 90%;
+  }
+}
