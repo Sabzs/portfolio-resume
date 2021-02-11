@@ -1,12 +1,14 @@
 import React from 'react';
-import ProfileAbout from "../../assets/images/hiring-website1 (2).jpg"
+// import ProfileAbout from "../../assets/images/linkedin.jpg"
 
 function ProfileDetails() {
   return (
     <div className="profileDetails" >
+
       <div className="profileDetails__profile-img" >
-        <img src={ProfileAbout} alt="profile-img" />
+        {/* <img src={ProfileAbout} alt="" /> */}
       </div>
+
       <div className="profileDetails__about-info" >
         <h4>I am<span> Sabo Jise</span></h4>
         <p className="profileDetails__info-text" >
@@ -34,6 +36,7 @@ function ProfileDetails() {
             <p>: Nigeria, Canada, Australia</p>
           </div>
         </div>
+
         <button className="profileDetails__CV-btn">Download CV</button>
       </div>
 
