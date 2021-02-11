@@ -1,27 +1,41 @@
 .servicesSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25vh;
+
   &__service-type {
-    width: 95%;
-    border-bottom: 1px solid #b5fffc;
-    border-bottom: 1px solid #b5fffc;
-    border-bottom: 1px solid #b5fffc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 20px 10px #fff;
     border-top: 8px solid $global-border-2;
     transition: all 0.4s ease-in-out;
-
-    background-color: #a9c9ff;
-    background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
-
     &:hover {
       border-top: 8px solid $global-blue-color;
     }
   }
   &__service-content {
-    // display: flex;
-    // justify-content: center;
-    // align-self: center;
-    // flex-direction: column;
-    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     font-size: calc(0.8125rem + ((1vw - 7.68px) * 0.6944));
+
+    background-color: #a9c9ff;
+    background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+
+    img {
+      width: 5rem;
+      height: 5rem;
+    }
   }
+
   &__service-title {
     position: relative;
     font-size: calc(1.3rem + ((1vw - 7.68px) * 0.6944));
@@ -40,5 +54,54 @@
     }
   }
 
-  //
+  //==//
+  @media screen and(max-width: 400px) {
+    &__service-content {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    &__service-type {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 1400px) {
+    &__service-type {
+      justify-content: center;
+      width: 100%;
+    }
+  }
+  //==//
+  // @media screen and(min-width: 90em) {
+  @media screen and(max-width: 93.75em) {
+    width: 40%;
+    height: 30vh;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    margin-right: 1rem;
+  }
+  @media screen and(max-width: 75em) {
+    width: 45%;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    margin-right: 1rem;
+  }
+  @media screen and(max-width: 48em) {
+    width: 40%;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    margin-right: 1rem;
+  }
+  @media screen and(max-width: 32em) {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+    margin-right: 0;
+  }
 }
