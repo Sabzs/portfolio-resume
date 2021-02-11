@@ -43,6 +43,11 @@
     // margin: 0 5rem;
     padding: 3rem 1rem;
   }
+  @media screen and (max-width: 93.7em) {
+    &__content {
+      padding: 5rem 12rem;
+    }
+  }
   @media screen and (max-width: 75em) {
     &__content {
       padding: 3rem 10rem;
@@ -62,8 +67,8 @@
   &__nav-btn {
     position: absolute;
     z-index: 10;
-    right: 10%;
-    top: 10%;
+    right: 8%;
+    top: 5.5%;
     height: 2.5rem;
     width: 2.5rem;
     display: flex;

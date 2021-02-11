@@ -8,7 +8,52 @@
   }
   &__services-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
     margin-top: 3rem;
   }
+
+  //==//
+
+  @media screen and (max-width: 1100px) {
+    &__skills-type-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  //
+  @media screen and (max-width: 93.75em) {
+    &__services-container {
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  @media screen and (max-width: 75em) {
+    &__services-container {
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  @media screen and (max-width: 48em) {
+    &__services-container {
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 32em) {
+    &__services-container {
+      width: 100%;
+    }
+  }
+
+  //
 }
