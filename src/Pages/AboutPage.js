@@ -37,11 +37,6 @@ function AboutPage() {
         />
       </div>
 
-
-
-
-
-
     </div>
   )
 }
