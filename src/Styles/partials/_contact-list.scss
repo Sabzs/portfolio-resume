@@ -30,4 +30,19 @@
   &__item-text {
     font-size: calc(0.8125rem + ((0.8125vw - 7.68px) * 0.6944));
   }
+
+  @media screen and(max-width: 35em) {
+    box-shadow: 0 0 20px 10px white;
+
+    &__contact-details {
+      padding: 0.5rem 0;
+    }
+
+    &__item-title {
+      font-size: calc(1.2rem + ((0.8125vw - 7.68px) * 0.6944));
+    }
+    &__item-text {
+      font-size: calc(1rem + ((0.8125vw - 7.68px) * 0.6944));
+    }
+  }
 }

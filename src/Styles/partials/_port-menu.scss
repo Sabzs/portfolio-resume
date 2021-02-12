@@ -1,21 +1,18 @@
 .portMenu {
   display: flex;
   width: 100%;
-  flex-direction: row;
-  flex-wrap: wrap;
 
   &__menu-list {
     display: flex;
     flex-direction: column;
-    padding: 0.5rem;
     margin: 1rem;
     overflow: hidden;
     width: 45%;
     height: 45%;
   }
+
   &__menu-items {
     position: relative;
-    // height: 5rem;
 
     &::before {
       content: "";
@@ -91,6 +88,38 @@
       cursor: pointer;
       color: $primary-text-color;
       width: auto;
+    }
+  }
+
+  @media screen and(max-width: 90em) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and(max-width: 90em) {
+    &__menu-list {
+      width: 45%;
+      height: 45%;
+    }
+  }
+
+  @media screen and(max-width: 50.4em) {
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @media screen and(max-width: 50.4em) {
+    &__menu-list {
+      width: 40%;
+    }
+  }
+
+  @media screen and(max-width: 31em) {
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and(max-width: 31em) {
+    &__menu-list {
+      width: 100%;
     }
   }
 }
