@@ -1,0 +1,43 @@
+@import "./global-variables";
+
+// breakpoints //
+@mixin small {
+  @media (min-width: $sm) {
+    @content;
+  }
+}
+@mixin medium {
+  @media (min-width: $md) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media (min-width: $lg) {
+    @content;
+  }
+}
+
+@mixin xlarge {
+  @media (min-width: $xl) {
+    @content;
+  }
+}
+//Secondary - Breakpoints==//
+@mixin s-section {
+  @media (min-width: $s-section) {
+    @content;
+  }
+}
+@mixin profile-d {
+  @media (min-width: $pd) {
+    @content;
+  }
+}
+
+// Fonts mixins  //
+@mixin fonts($size, $line-height, $weight) {
+  font-size: $size;
+  line-height: $line-height;
+  font-weight: $weight;
+}
