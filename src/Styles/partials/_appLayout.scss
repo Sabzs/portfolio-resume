@@ -1,89 +1,83 @@
 .App {
-  &__sidebar {
-    width: 16%;
-    height: 100vh;
-    position: fixed;
-    z-index: 11;
-    border-right: 1px solid $sidebar-border-right;
-    transform-origin: left;
+  @include small {
+    &__sidebar {
+      width: 40%;
+      position: fixed;
+      z-index: 11;
+      border-right: 1px solid $sidebar-border-right;
+      transform-origin: left;
 
-    //medium==//
-    @media screen and (max-width: 62.5rem) {
-      width: 25%;
       transform: translate(-100%);
       transition: all 0.3s ease-in-out;
     }
-    //small==//
-    @media screen and (max-width: 400px) {
-      width: 50%;
-    }
-  }
-  .nav-toggle {
-    @media screen and (max-width: 62.5rem) {
+
+    &__nav-toggle {
       transform: translate(0);
       transition: all 0.3s ease-in-out;
     }
-  }
-  &__main-content {
-    width: 84%;
-    margin-left: 16%;
-    min-height: 100vh;
-    display: grid;
-    position: relative;
+    &__nav-btn {
+      position: absolute;
+      z-index: 10;
+      right: 8%;
+      top: 5.5%;
+      height: 2.5rem;
+      width: 2.5rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(3, 129, 255, 0.055);
+      cursor: pointer;
 
-    @media screen and (max-width: 62.5em) {
-      margin-left: 0;
+      .fa-bars {
+        font-size: calc(1.3rem + ((2vw - 7.68px) * 0.6944));
+        color: $primary-text-color;
+      }
+    }
+
+    &__main-content {
       width: 100%;
+      min-height: 100vh;
+      display: grid;
+      position: relative;
     }
-  }
-  &__content {
-    display: flex;
-    padding: 3rem 1rem;
-  }
-  @media screen and (max-width: 93.7em) {
     &__content {
-      padding: 5rem 12rem;
+      display: flex;
+      padding: 3rem 2rem;
     }
+
+    //=//
   }
-  @media screen and (max-width: 75em) {
+  @include medium {
     &__content {
-      padding: 3rem 10rem;
+      padding: 3rem 4rem;
     }
   }
-  @media screen and (max-width: 64em) {
+  @include large {
+    &__sidebar {
+      width: 20%;
+      transform: translate(0);
+      transition: all 0.3s ease-in-out;
+    }
+    &__nav-toggle {
+      display: flex;
+      transform: translate(-100%);
+      transition: all 0.3s ease-in-out;
+    }
+    &__nav-btn {
+      display: none;
+    }
+    &__main-content {
+      width: 80%;
+      margin-left: 20%;
+    }
+    &__content {
+      padding: 3rem 5rem;
+    }
+  }
+  @include xlarge {
     &__content {
       padding: 3rem 8rem;
     }
   }
-  @media screen and (max-width: 48em) {
-    &__content {
-      padding: 3rem 2rem;
-    }
-  }
-
-  &__nav-btn {
-    position: absolute;
-    z-index: 10;
-    right: 8%;
-    top: 5.5%;
-    height: 2.5rem;
-    width: 2.5rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(3, 129, 255, 0.055);
-    display: none;
-    cursor: pointer;
-
-    @media screen and (max-width: 62.5rem) {
-      display: flex;
-    }
-
-    .fa-bars {
-      font-size: calc(1.3rem + ((2vw - 7.68px) * 0.6944));
-      color: $primary-text-color;
-    }
-  }
-
   //
 }

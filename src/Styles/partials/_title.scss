@@ -44,8 +44,16 @@
     font-size: calc(1.5rem + ((1vw - 7.68px) * 0.6944));
 
     span {
-      width: 80%;
-      font-size: calc(2.5rem + ((1vw - 7.68px) * 0.6944));
+      width: 90%;
+      font-size: calc(2.1rem + ((1vw - 7.68px) * 0.6944));
+    }
+  }
+}
+@media screen and(max-width: 320px) {
+  .Title {
+    span {
+      width: 90%;
+      font-size: calc(2rem + ((1vw - 7.68px) * 0.6944));
     }
   }
 }
