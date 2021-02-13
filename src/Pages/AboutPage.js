@@ -10,7 +10,10 @@ function AboutPage() {
     <div className="aboutPage">
       <Title title={"About Me"} span={"About Me"} />
 
-      <ImageSection />
+      <div className="aboutPage__image-sec-container" >
+        <ImageSection />
+      </div>
+
 
       <Title title={"My Skills"} span={"My Skills"} />
 
