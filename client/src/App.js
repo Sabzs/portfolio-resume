@@ -1,3 +1,4 @@
+// import React from 'react';
 import React, { useState } from 'react';
 import NavBar from './Components/NavBar';
 import HomePage from './Pages/HomePage';
@@ -12,14 +13,16 @@ import BlogsPage from './Pages/BlogsPage';
 function App() {
   const [toggleNav, setToggleNav] = useState(false);
 
-  const navClick = () => {
-    setToggleNav(!toggleNav)
-  }
+  const navClick = () => { setToggleNav(!toggleNav) };
+  const closeMenu = () => { setToggleNav(false) }
+
+
 
   return (
     <div className="App">
-
-      <div className={`App__sidebar  ${toggleNav ? "App__nav-toggle" : ""} `} ><NavBar /></div>
+      <div className={`App__sidebar  ${toggleNav ? "App__nav-toggle" : ""} `} >
+        <NavBar closeMenu={closeMenu} />
+      </div>
 
       <div className="App__nav-btn" onClick={navClick} >
         <i className="fas fa-bars"></i>
