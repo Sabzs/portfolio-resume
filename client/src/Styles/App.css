@@ -96,11 +96,11 @@ body::-webkit-scrollbar-track {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .App__nav-btn {
+  .App__burgerMenu {
     position: absolute;
     z-index: 10;
     right: 8%;
-    top: 5.5%;
+    top: 4%;
     height: 2.5rem;
     width: 2.5rem;
     display: -webkit-box;
@@ -112,11 +112,11 @@ body::-webkit-scrollbar-track {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: rgba(3, 129, 255, 0.055);
+    background-color: rgba(3, 129, 255, 0.144);
     cursor: pointer;
   }
-  .App__nav-btn .fa-bars {
-    font-size: calc(1.3rem + ((2vw - 7.68px) * 0.6944));
+  .App__burgerMenu .fa-bars {
+    font-size: calc(1.5rem + ((2vw - 7.68px) * 0.6944));
     color: #0f1a23;
   }
   .App__main-content {
@@ -135,6 +135,10 @@ body::-webkit-scrollbar-track {
 }
 
 @media (min-width: 48em) {
+  .App__burgerMenu {
+    height: 2.8rem;
+    width: 2.8rem;
+  }
   .App__content {
     padding: 3rem 4rem;
   }
@@ -157,7 +161,7 @@ body::-webkit-scrollbar-track {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .App__nav-btn {
+  .App__burgerMenu {
     display: none;
   }
   .App__main-content {
@@ -420,13 +424,38 @@ body::-webkit-scrollbar-track {
 
 @media (min-width: 400px) {
   .aboutPage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
+  .aboutPage__services-skills-title {
+    height: 5rem;
+  }
   .aboutPage__image-sec-container, .aboutPage__skills-type-container, .aboutPage__services-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: auto;
     margin-top: 2rem;
   }
   .aboutPage__image-sec-container:not(:last-child), .aboutPage__skills-type-container:not(:last-child), .aboutPage__services-container:not(:last-child) {
     margin-bottom: 1rem;
+  }
+  .aboutPage__downloadResume {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    height: auto;
+    padding: 1rem 0;
+    margin-bottom: 3rem;
   }
   .aboutPage__skills-type-container {
     display: -webkit-box;
@@ -482,6 +511,19 @@ body::-webkit-scrollbar-track {
   }
 }
 
+@media (min-width: 64em) {
+  .aboutPage__services-skills-title {
+    width: 100%;
+    height: 5rem;
+  }
+  .aboutPage__skills-type-container {
+    width: 100%;
+  }
+  .aboutPage__downloadResume {
+    width: 100%;
+  }
+}
+
 @media (min-width: 75em) {
   .aboutPage {
     -webkit-box-pack: center;
@@ -502,12 +544,11 @@ body::-webkit-scrollbar-track {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin-bottom: 4rem;
   }
   .profileDetails__profile-img {
     width: 100%;
     height: auto;
-    padding-top: 50.5%;
+    padding-top: 60.5%;
     padding-bottom: 50%;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(50, 50, 50, 0.1)), to(rgba(50, 50, 50, 0.1))), url("../assets/images/profile-sunny-day.jpg");
     background: linear-gradient(rgba(50, 50, 50, 0.1), rgba(50, 50, 50, 0.1)), url("../assets/images/profile-sunny-day.jpg");
@@ -516,99 +557,56 @@ body::-webkit-scrollbar-track {
     background-position: center;
   }
   .profileDetails__about-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 0.5rem;
   }
   .profileDetails__about-info h4 {
-    font-size: calc(2rem + ((1vw - 7.68px) * 0.6944));
+    font-size: calc(1.5rem + ((1vw - 7.68px) * 0.6944));
+    font-weight: bold;
   }
-  .profileDetails__info-text {
-    padding: 1rem 0;
-    font-size: calc(1.1rem + ((1vw - 7.68px) * 0.6944));
-  }
-  .profileDetails__about-details {
+  .profileDetails__about-info p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    font-family: "Linotype";
+    font-size: calc(1.2rem + ((1vw - 7.68px) * 0.6944));
+    line-height: 1.3rem;
   }
-  .profileDetails__about-details p {
-    padding: 0.5rem 0;
-    font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
-  }
-  .profileDetails__left-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    padding: 1rem 0;
-  }
-  .profileDetails__right-section {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin-left: 0.5rem;
-  }
-  .profileDetails__CV-btn {
-    padding: 1rem 2rem;
-    background-color: rgba(3, 127, 255, 0.396);
-    outline: none;
-    border: none;
-    font-family: inherit;
-    font-size: calc(0.875rem + ((1vw - 7.68px) * 0.6944));
-    color: white;
-    text-transform: uppercase;
-    cursor: pointer;
-    letter-spacing: 2px;
-    margin-top: 1rem;
-    position: relative;
-  }
-  .profileDetails__CV-btn::after {
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 0.3rem;
-    left: 0;
-    bottom: 0;
-    background-color: #a4acc4;
-    -webkit-transition: all 0.4s ease-in-out;
-    transition: all 0.4s ease-in-out;
-  }
-  .profileDetails__CV-btn:hover::after {
-    width: 100%;
+  .profileDetails__about-info p:not(:last-child) {
+    padding-bottom: 0.3rem;
   }
 }
 
-@media (min-width: 50em) {
+@media (min-width: 48em) {
   .profileDetails {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    height: auto;
   }
   .profileDetails__profile-img {
+    width: 40%;
     padding-top: 25%;
     padding-bottom: 15%;
   }
   .profileDetails__about-info {
+    width: 60%;
+    margin-top: 0;
     padding-left: 0.5rem;
   }
-  .profileDetails__about-details p {
-    font-size: calc(0.875rem + ((1vw - 7.68px) * 0.6944));
+  .profileDetails__about-info p {
+    font-size: calc(1.3rem + ((1vw - 7.68px) * 0.6944));
+    line-height: 1.2em;
   }
 }
 
@@ -616,8 +614,59 @@ body::-webkit-scrollbar-track {
   .profileDetails__profile-img {
     padding-bottom: 15%;
   }
-  .profileDetails__about-details p {
-    font-size: calc(0.8125rem + ((1vw - 7.68px) * 0.6944));
+  .profileDetails__about-info p {
+    font-size: calc(1.3rem + ((1vw - 7.68px) * 0.6944));
+    line-height: 1.3em;
+  }
+  .profileDetails__about-info p:not(:last-child) {
+    padding-bottom: 0.4rem;
+  }
+}
+
+.resume-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.resume-download__CV-btn {
+  width: 60%;
+  height: 3rem;
+  background-color: rgba(3, 127, 255, 0.396);
+  outline: none;
+  border: none;
+  font-family: inherit;
+  font-size: calc(0.975rem + ((1vw - 7.68px) * 0.6944));
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 2px;
+  padding: 1rem;
+  position: relative;
+}
+
+.resume-download__CV-btn::after {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0.3rem;
+  left: 0;
+  bottom: 0;
+  background-color: #a4acc4;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.resume-download__CV-btn:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-width: 48em) {
+  .resume-download__CV-btn {
+    height: 4rem;
+    width: 40%;
   }
 }
 
