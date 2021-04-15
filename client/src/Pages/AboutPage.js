@@ -4,18 +4,28 @@ import ServicesSection from '../Components/AboutSections/ServicesSection';
 import SkillsSection from '../Components/AboutSections/SkillsSection';
 import Title from '../Components/Title';
 import design from "../assets/images/design.svg"
+import DownloadResume from '../Components/DownloadResume';
 
 function AboutPage() {
   return (
     <div className="aboutPage">
-      <Title title={"About Me"} span={"About Me"} />
+      <div className="aboutPage__services-skills-title" >
+        <Title title={"About Me"} span={"About Me"} />
+      </div>
+
 
       <div className="aboutPage__image-sec-container" >
         <ImageSection />
       </div>
 
+      <div className="aboutPage__downloadResume" >
+        <DownloadResume />
+      </div>
 
-      <Title title={"My Skills"} span={"My Skills"} />
+      <div className="aboutPage__services-skills-title" >
+        <Title title={"My Skills"} span={"My Skills"} />
+      </div>
+
 
       <div className="aboutPage__skills-type-container" >
         <SkillsSection skill={"JavaScript"} progress={"50%"} width={"50%"} />
@@ -27,7 +37,11 @@ function AboutPage() {
         <SkillsSection skill={"HTML"} progress={"80%"} width={"80%"} />
       </div>
 
-      <Title title={"Service"} span={"Service"} />
+
+      <div className="aboutPage__services-skills-title" >
+        <Title title={"Service"} span={"Service"} />
+      </div>
+
       <div className="aboutPage__services-container" >
         <ServicesSection image={design} title={"Web design"}
           text={"Web design has continue to be a passion that motivates my to be more creative..."}

@@ -6,7 +6,6 @@
       z-index: 11;
       border-right: 1px solid $sidebar-border-right;
       transform-origin: left;
-
       transform: translate(-100%);
       transition: all 0.3s ease-in-out;
     }
@@ -15,21 +14,21 @@
       transform: translate(0);
       transition: all 0.3s ease-in-out;
     }
-    &__nav-btn {
+    &__burgerMenu {
       position: absolute;
       z-index: 10;
       right: 8%;
-      top: 5.5%;
+      top: 4%;
       height: 2.5rem;
       width: 2.5rem;
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: rgba(3, 129, 255, 0.055);
+      background-color: rgba(3, 129, 255, 0.144);
       cursor: pointer;
 
       .fa-bars {
-        font-size: calc(1.3rem + ((2vw - 7.68px) * 0.6944));
+        font-size: calc(1.5rem + ((2vw - 7.68px) * 0.6944));
         color: $primary-text-color;
       }
     }
@@ -48,6 +47,10 @@
     //=//
   }
   @include medium {
+    &__burgerMenu {
+      height: 2.8rem;
+      width: 2.8rem;
+    }
     &__content {
       padding: 3rem 4rem;
     }
@@ -63,7 +66,7 @@
       transform: translate(-100%);
       transition: all 0.3s ease-in-out;
     }
-    &__nav-btn {
+    &__burgerMenu {
       display: none;
     }
     &__main-content {

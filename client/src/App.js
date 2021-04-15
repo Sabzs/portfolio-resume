@@ -24,7 +24,7 @@ function App() {
         <NavBar closeMenu={closeMenu} />
       </div>
 
-      <div className="App__nav-btn" onClick={navClick} >
+      <div className="App__burgerMenu" onClick={navClick} >
         <i className="fas fa-bars"></i>
       </div>
 
