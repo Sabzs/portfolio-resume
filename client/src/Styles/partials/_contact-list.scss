@@ -1,17 +1,14 @@
 .contactList {
   display: flex;
+  align-items: center;
+  padding: 1rem 0;
   width: 100%;
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
+  box-shadow: 0 0 20px 10px white;
+  background-color: rgba(3, 129, 255, 0.055);
 
-  &__contact-details {
-    display: flex;
-    align-items: center;
-    padding: 1rem 0;
-    width: 100%;
-    background-color: rgba(3, 129, 255, 0.055);
-  }
   &__item-icon {
     padding: 0.5rem;
     margin-left: 2rem;
@@ -31,18 +28,19 @@
     font-size: calc(0.8125rem + ((0.8125vw - 7.68px) * 0.6944));
   }
 
-  @media screen and(max-width: 35em) {
-    box-shadow: 0 0 20px 10px white;
-
-    &__contact-details {
-      padding: 0.5rem 0;
+  @include medium {
+    width: 60%;
+    &__item-icon {
+      height: 4.5rem;
+      width: 18%;
     }
-
     &__item-title {
-      font-size: calc(1.2rem + ((0.8125vw - 7.68px) * 0.6944));
+      font-size: calc(1.2rem + ((1vw - 7.68px) * 0.6944));
     }
     &__item-text {
-      font-size: calc(1rem + ((0.8125vw - 7.68px) * 0.6944));
+      font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
     }
   }
+  // @include large {}
+  // @include xlarge {}
 }
