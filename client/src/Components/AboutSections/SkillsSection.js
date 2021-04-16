@@ -1,22 +1,26 @@
+
 import React from 'react'
 
-function SkillsSection({ skill, progress, width }) {
+function SkillsSection({ skillslist }) {
   return (
     <div className="skillsSection" >
-      <div className="skillsSection__skill-container" >
-        <h5 className="skillsSection__skill-title">{skill}</h5>
-        <div className="skillsSection__skill-bar">
-          <p className="skillsSection__skill-text">{progress}</p>
-          <div className="skillsSection__skill-progress">
-            <div className="skillsSection__progress" >
-              <div className="skillsSection__inner-progress" style={{ width: width }} ></div> {/* //instead of before & after// */}
+      {skillslist.map((skills) => {
+        return (
+          <div className="skillsSection__skills-type" key={skills.id}>
+            <div className="skillsSection__skills-list" >
+              <h2 className="skillsSection__skills-list-header">{skills.category}</h2>
+              <p className="skillsSection__skills-content">{skills.lang1}</p>
+              <p className="skillsSection__skills-content">{skills.lang2}</p>
+              <p className="skillsSection__skills-content">{skills.lang3}</p>
+              <p className="skillsSection__skills-content">{skills.lang4}</p>
             </div>
+
           </div>
-        </div>
-      </div>
+        )
+      })}
 
     </div>
   )
 }
 
-export default SkillsSection;
+export default SkillsSection
