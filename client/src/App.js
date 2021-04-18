@@ -17,7 +17,6 @@ function App() {
   const closeMenu = () => { setToggleNav(false) }
 
 
-
   return (
     <div className="App">
       <div className={`App__sidebar  ${toggleNav ? "App__nav-toggle" : ""} `} >
