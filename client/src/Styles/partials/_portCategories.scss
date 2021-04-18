@@ -1,0 +1,66 @@
+.portCategories {
+  @include small {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    width: 100%;
+
+    border: 1px solid orangered;
+
+    &__filter-btn {
+      padding: 0.6rem;
+      margin: 0.5rem;
+      width: 6rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      background-color: rgba(3, 129, 255, 0.281);
+      border: 1px solid #b5fffc;
+      border-radius: 0 1rem;
+      font-size: calc(0.8125rem + ((1vw - 7.68px) * 0.6944));
+      transition: all 0.3s ease-in-out;
+
+      &:hover {
+        background-color: $primary-text-color;
+        color: #fff;
+      }
+      &:active {
+        background-color: $secondary-text-color;
+        color: #fff;
+      }
+      &:focus {
+        background-color: $secondary-text-color;
+        color: #fff;
+      }
+    }
+  }
+
+  //   //========//
+
+  // @include s-section {}
+  // @include medium {}
+  // @include large {}
+  // @include xlarge {}
+
+  // @media screen and(max-width: 32em) {
+  //   &__filter-btn {
+  //     width: 4rem;
+  //     padding: 0.3rem;
+  //     margin: 0.2rem;
+  //   }
+  // }
+  // @media screen and(max-width: 64em) {
+  //   &__filter-btn {
+  //     width: 6rem;
+  //     padding: 0.4rem 0.5rem;
+  //   }
+  // }
+  // @media screen and(max-width: 90em) {
+  //   &__filter-btn {
+  //     width: 7rem;
+  //     padding: 0.4rem 0.5rem;
+  //   }
+  // }
+}
