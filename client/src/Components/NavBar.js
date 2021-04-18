@@ -21,7 +21,7 @@ function NavBar({ closeMenu }) {
             <NavLink to="/about" activeClassName="active" onClick={closeMenu}  >About</NavLink>
           </li>
           <li className="navBar__nav-item" >
-            <NavLink to="/portfolios" activeClassName="active" onClick={closeMenu}   >Portfolios</NavLink>
+            <NavLink to="/portfolios" activeClassName="active" onClick={closeMenu}   >Projects</NavLink>
           </li>
           <li className="navBar__nav-item" >
             <NavLink to="/blogs" activeClassName="active" onClick={closeMenu}   >Blogs</NavLink>
