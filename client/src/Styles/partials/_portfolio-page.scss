@@ -2,19 +2,19 @@
   @include small {
     width: 100%;
 
-    border: 1px solid black;
-
     &__portfolio-title {
       width: 100%;
       height: 5rem;
-      border: 1px solid pink;
     }
 
     &__portfolio-content {
       width: 100%;
       margin-top: 0.5rem;
-
-      border: 1px solid yellow;
+    }
+  }
+  @include medium {
+    &__portfolio-content {
+      margin-top: 1rem;
     }
   }
 }

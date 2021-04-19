@@ -1,127 +1,194 @@
 .portMenu {
-  display: flex;
-  width: 100%;
-
-  &__menu-list {
+  @include small {
     display: flex;
-    flex-direction: column;
-    margin: 1rem;
-    overflow: hidden;
-    width: 45%;
-    height: 45%;
-
-    border: 1px solid black;
-  }
-
-  &__menu-items {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 12px;
-      left: 15px;
-      height: calc(100% - 30px);
-      width: calc(100% - 30px);
-      background-color: rgba(3, 129, 255, 0.281);
-      transform-origin: center;
-      transform: scale(0);
-      transition: all 0.4s ease-in-out;
-    }
-    &:hover::before {
-      transform: scale(1);
-    }
-
-    &:hover {
-      #hover-items {
-        transition: all 0.5s ease-in-out 0.2s;
-        visibility: visible;
-        top: 50%;
-      }
-    }
-  }
-
-  &__port-thumb {
-    object-fit: cover;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    height: 25vh;
+    &__menu-list {
+      display: flex;
+      flex-direction: column;
+      margin: 1rem;
+      width: 100%;
+      height: 30rem;
+      background-color: rgba(6, 9, 7, 0.1);
+      box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+      transition: all ease-in-out 250ms;
 
-    &:hover {
-      &__hover-items {
-        transition: all 0.5s ease-in-out 0.2s;
-        visibility: visible;
-        top: 50%;
+      &:hover {
+        cursor: pointer;
+        transform: translateY(-10px);
+        box-shadow: 0pxgit 18px 8px -10px rgba(0, 0, 0, 0.75);
+        background-color: #0f1a23;
+        color: #ffffffab;
+        .project-name-hover,
+        .stack-hover-color {
+          h4 {
+            color: rgba(255, 255, 0, 0.685);
+          }
+        }
+        .project-website-hover {
+          a {
+            border: 1px solid rgba(220, 20, 60, 0.671);
+            border: 1px solid $global-border-2;
+            color: pink;
+          }
+        }
       }
     }
-  }
-
-  &__hover-items {
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 1rem 2rem;
-    visibility: hidden;
-
-    li {
+    &__project-thumb {
+      display: flex;
+      width: 100%;
+      height: 50%;
+      position: relative;
+      padding-top: 56.25%;
+      img {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        // height: auto;
+      }
+    }
+    &__project-content {
+      display: flex;
+      flex-direction: column;
+      padding: 0.5rem 0.3rem;
+      height: 50%;
+    }
+    &__project-title-website {
+      display: flex;
+      align-items: center;
+      width: 100%;
+    }
+    &__project-name,
+    &__project-website {
+      display: flex;
+      width: 50%;
+    }
+    &__project-name {
+      display: flex;
+      justify-content: flex-start;
+      h4 {
+        font-size: calc(1.3rem + ((1vw - 7.68px) * 0.6944));
+        color: $secondary-text-color;
+        font-weight: 600;
+      }
+    }
+    &__project-website {
+      display: flex;
+      justify-content: flex-end;
       a {
-        background-color: greenyellow;
-        padding: 1rem;
-        text-decoration: none;
-        font-family: inherit;
-        border-radius: 10px;
-        background-color: $primary-text-color;
-        color: white;
-
+        font-size: calc(0.975rem + ((1vw - 7.68px) * 0.6944));
+        font-weight: 600;
+        color: $secondary-text-color;
+        padding: 0.3rem;
+        border-radius: 0.2rem;
+        border: 0.3px solid rgba(6, 9, 7, 0.1);
+        box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+        &:hover {
+          background-color: rgba(169, 197, 178, 0.329);
+        }
+      }
+    }
+    &__project-description {
+      display: flex;
+      margin: 0.5rem 0 1rem;
+    }
+    &__project-stacks {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+      h4 {
+        display: flex;
+        font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
+        line-height: 1.2em;
+        font-weight: 600;
+        color: $primary-text-color;
+        padding: 0.1rem;
         &:not(:last-child) {
-          margin-right: 2rem;
+          margin-right: 0.8rem;
         }
       }
     }
   }
-
-  &__item-title {
-    font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
-    color: $secondary-text-color;
-    font-weight: 600;
-    transition: 0.4s ease-in-out;
-
-    &:hover {
-      cursor: pointer;
-      color: $primary-text-color;
-      width: auto;
+  //=======================//
+  @include s-section {
+    &__menu-list {
+      width: 65%;
+      height: 30rem;
+    }
+    &__project-website {
+      a {
+        font-size: calc(0.875rem + ((1vw - 7.68px) * 0.6944));
+      }
     }
   }
-
-  @media screen and(max-width: 90em) {
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  @media screen and(max-width: 90em) {
+  @include medium {
     &__menu-list {
-      width: 40%;
-      height: 40%;
-    }
-  }
-
-  @media screen and(max-width: 50.4em) {
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-  @media screen and(max-width: 50.4em) {
-    &__menu-list {
-      width: 40%;
-    }
-  }
-
-  @media screen and(max-width: 31em) {
-    justify-content: center;
-    align-items: center;
-  }
-  @media screen and(max-width: 31em) {
-    &__menu-list {
+      flex-direction: row;
       width: 100%;
+      height: 20rem;
+    }
+    &__project-thumb,
+    &__project-content {
+      width: 50%;
+      height: 100%;
+    }
+    &__project-thumb {
+      display: flex;
+      position: relative;
+      padding-top: 30%;
+    }
+    &__project-website {
+      a {
+        font-size: calc(0.775rem + ((1vw - 7.68px) * 0.6944));
+      }
+    }
+    &__project-stacks {
+      h4 {
+        font-size: calc(0.925rem + ((1vw - 7.68px) * 0.6944));
+      }
+    }
+  }
+  @include large {
+    &__menu-list {
+      flex-direction: column;
+      width: 45%;
+      height: 30rem;
+    }
+    &__project-thumb,
+    &__project-content {
+      width: 100%;
+      height: 100%;
+    }
+    &__project-name {
+      h4 {
+        font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
+      }
+    }
+    &__project-stacks {
+      h4 {
+        font-size: calc(0.725rem + ((1vw - 7.68px) * 0.6944));
+      }
+    }
+  }
+  @include xlarge {
+    &__project-name {
+      h4 {
+        font-size: calc(0.825rem + ((1vw - 7.68px) * 0.6944));
+      }
+    }
+    &__project-website,
+    &__project-stacks {
+      a {
+        font-size: calc(0.575rem + ((1vw - 7.68px) * 0.6944));
+      }
+      h4 {
+        font-size: calc(0.625rem + ((1vw - 7.68px) * 0.6944));
+      }
     }
   }
 }

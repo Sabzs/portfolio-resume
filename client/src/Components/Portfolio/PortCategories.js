@@ -7,9 +7,13 @@ function PortCategories({ filter, categories }) {
 
       {
         categories.map((catList, i) => {
-          return <button key={i}
-            className="portCategories__filter-btn"
-            type="button" onClick={() => filter(catList)}>{catList}</button>
+          return (
+            <button key={i}
+              className="portCategories__filter-btn"
+              type="button"
+              onClick={() => filter(catList)}>{catList}
+            </button>
+          )
         })
       }
 

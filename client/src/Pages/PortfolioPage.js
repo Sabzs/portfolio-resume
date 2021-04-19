@@ -10,9 +10,7 @@ const categoryList = ["All", ...new Set(Portfolios.map(item => item.category))]
 
 function PortfolioPage() {
   const [categories] = useState(categoryList);
-  // const [categories,setCategories] = useState(categoryList);
   const [menuItems, setMenuItems] = useState(Portfolios);
-
 
   const filter = (category) => {
     if (category === "All") {
@@ -26,21 +24,17 @@ function PortfolioPage() {
   }
 
 
-
   return (
     <div className="portfolioPage" >
 
-      <div className="portfolioPage__porfolio-title">
-        <Title title={"Portfolios"} span={"Portfolios"} />
+      <div className="portfolioPage__portfolio-title">
+        <Title title={"Projects"} span={"Projects"} />
       </div>
 
-      <div className="portfolioPage__porfolio-content" >
+      <div className="portfolioPage__portfolio-content" >
         <PortCategories filter={filter} categories={categories} />
         <PortMenu menuItem={menuItems} />
       </div>
-
-
-
 
     </div>
   )
