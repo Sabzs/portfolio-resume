@@ -18,7 +18,8 @@ function PortMenu({ menuItem }) {
                   <h4>{item.title}</h4>
                 </div>
                 <div className="portMenu__project-website project-website-hover" >
-                  <a href={item.link1} >{item.icon1}</a>
+                  <a className="portMenu__link1" href={item.link1} >{item.icon1}</a>
+                  <a className="portMenu__link2" href={item.link2} >{item.icon2}</a>
                 </div>
               </div>
 
