@@ -23,9 +23,9 @@ function NavBar({ closeMenu }) {
           <li className="navBar__nav-item" >
             <NavLink to="/portfolios" activeClassName="active" onClick={closeMenu}   >Projects</NavLink>
           </li>
-          <li className="navBar__nav-item" >
+          {/* <li className="navBar__nav-item" >
             <NavLink to="/blogs" activeClassName="active" onClick={closeMenu}   >Blogs</NavLink>
-          </li>
+          </li> */}
           <li className="navBar__nav-item" >
             <NavLink to="/contact" activeClassName="active" onClick={closeMenu}   >Contact</NavLink>
           </li>

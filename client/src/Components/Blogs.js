@@ -1,8 +1,8 @@
-import blog1 from "../assets/images/blog1.svg"
-import blog2 from "../assets/images/blog2.svg"
-import blog3 from "../assets/images/blog3.svg"
-import blog4 from "../assets/images/blog4.svg"
-import blog5 from "../assets/images/blog5.svg"
+import blog1 from "../assets/images/adeolu-eletu-unsplash.jpg"
+import blog2 from "../assets/images/daniel-sessler-unsplash.jpg"
+import blog3 from "../assets/images/marvin-meyer-unsplash.jpg"
+import blog4 from "../assets/images/adeolu-eletu-unsplash.jpg"
+import blog5 from "../assets/images/marvin-meyer-unsplash.jpg"
 
 
 const Blogs = [
