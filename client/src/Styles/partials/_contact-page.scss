@@ -34,6 +34,12 @@
       font-family: "Titillium Web";
       font-size: calc(0.875rem + ((1vw - 7.68px) * 0.6944));
       line-height: 1.3em;
+
+      a {
+        display: flex;
+        color: #2d506b;
+        margin-bottom: 1rem;
+      }
     }
   }
   @include s-section {

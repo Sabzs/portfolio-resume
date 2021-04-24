@@ -5,6 +5,7 @@ import phone from "../assets/images/phone-icon.svg";
 import email from "../assets/images/email-icon.svg";
 import location from "../assets/images/location-icon.svg";
 
+
 function ContactPage() {
 
   return (
@@ -24,7 +25,9 @@ function ContactPage() {
 
         <div className="contactPage__details-section">
           <ContactList title={"Phone:"} icon={phone} text={"+1 778 512 8464"} />
-          <ContactList title={"Email:"} icon={email} text={"sabojise@gmail.com"} />
+          <a href="mailto:sajiyoonline@gmail.com">
+            <ContactList title={"Email:"} icon={email} text={"sajiyoonline@gmail.com"} />
+          </a>
           <ContactList title={"Address:"} icon={location} text={"Osprey Village, Pit Meadows"} />
         </div>
       </div>
