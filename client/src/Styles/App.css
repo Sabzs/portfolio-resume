@@ -316,6 +316,33 @@ body::-webkit-scrollbar-track {
   width: 100%;
 }
 
+.homePage__first-wrapper {
+  width: 100%;
+  height: 40%;
+}
+
+.homePage__second-wrapper {
+  width: 100%;
+  height: 60%;
+}
+
+.homePage__home-title {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+}
+
+.homePage__hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .homePage__hero-header {
   color: #2d506b;
   text-align: center;
@@ -360,6 +387,13 @@ body::-webkit-scrollbar-track {
 
 .homePage__icons .fa-github:hover {
   color: rgba(24, 1, 15, 0.733);
+}
+
+@media (min-width: 64em) {
+  .homePage__services-skills-title {
+    width: 100%;
+    height: 5rem;
+  }
 }
 
 .Title {
@@ -741,9 +775,7 @@ body::-webkit-scrollbar-track {
 }
 
 .blogsPage {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -876,6 +908,13 @@ body::-webkit-scrollbar-track {
     font-size: calc(0.875rem + ((1vw - 7.68px) * 0.6944));
     line-height: 1.3em;
   }
+  .contactPage__details-section a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    color: #2d506b;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (min-width: 31.25em) {
@@ -1002,7 +1041,6 @@ body::-webkit-scrollbar-track {
     transition: all ease-in-out 250ms;
   }
   .portMenu__menu-list:hover {
-    cursor: pointer;
     -webkit-transform: translateY(-10px);
             transform: translateY(-10px);
     -webkit-box-shadow: 0pxgit 18px 8px -10px rgba(0, 0, 0, 0.75);
@@ -1015,8 +1053,7 @@ body::-webkit-scrollbar-track {
     color: rgba(255, 255, 0, 0.685);
   }
   .portMenu__menu-list:hover .project-website-hover a {
-    border: 1px solid rgba(220, 20, 60, 0.671);
-    border: 1px solid #9dbdd6;
+    font-weight: bold;
     color: pink;
   }
   .portMenu__project-thumb {
@@ -1073,6 +1110,16 @@ body::-webkit-scrollbar-track {
     font-size: calc(1.3rem + ((1vw - 7.68px) * 0.6944));
     color: #2d506b;
     font-weight: 600;
+    color: #2d506b;
+    padding: 0.3rem;
+    border-radius: 0.2rem;
+    border: 0.3px solid rgba(6, 9, 7, 0.1);
+    -webkit-box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+            box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+  }
+  .portMenu__project-name h4:hover {
+    background-color: rgba(169, 197, 178, 0.329);
+    cursor: pointer;
   }
   .portMenu__project-website {
     display: -webkit-box;
@@ -1083,14 +1130,13 @@ body::-webkit-scrollbar-track {
             justify-content: flex-end;
   }
   .portMenu__project-website a {
-    font-size: calc(0.975rem + ((1vw - 7.68px) * 0.6944));
+    text-transform: uppercase;
+    font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
     font-weight: 600;
     color: #2d506b;
     padding: 0.3rem;
     border-radius: 0.2rem;
-    border: 0.3px solid rgba(6, 9, 7, 0.1);
-    -webkit-box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
-            box-shadow: 0px 4px 5px -2px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
   }
   .portMenu__project-website a:hover {
     background-color: rgba(169, 197, 178, 0.329);
