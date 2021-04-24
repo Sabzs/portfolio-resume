@@ -31,7 +31,6 @@
         &:not(:last-child) {
           padding-bottom: 0.3rem;
         }
-        // font-family: "Titillium Web";
         font-family: "Linotype";
         font-size: calc(1.2rem + ((1vw - 7.68px) * 0.6944));
         line-height: 1.3rem;
@@ -59,7 +58,6 @@
   }
   @include large {
     &__profile-img {
-      // padding-top: 35%;
       padding-bottom: 15%;
     }
     &__about-info {

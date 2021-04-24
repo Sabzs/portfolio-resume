@@ -7,7 +7,6 @@
   &__nav-menu {
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
     align-items: center;
     padding: 2rem 0;
   }
@@ -40,7 +39,6 @@
 
     a {
       font-size: calc(1rem + ((1vw - 7.68px) * 0.6944));
-      // color: inherit;
       display: block;
       padding: 0.5rem 0;
       position: relative;
