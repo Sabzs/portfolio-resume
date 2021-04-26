@@ -28,7 +28,7 @@ function ContactPage() {
           <a href="mailto:sajiyoonline@gmail.com">
             <ContactList title={"Email:"} icon={email} text={"sajiyoonline@gmail.com"} />
           </a>
-          <ContactList title={"Address:"} icon={location} text={"Osprey Village, Pit Meadows"} />
+          <ContactList title={"Address:"} icon={location} text={"Osprey Village, Pitt Meadows"} />
         </div>
       </div>
 
