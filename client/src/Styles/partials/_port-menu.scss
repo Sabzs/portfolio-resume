@@ -137,6 +137,8 @@
       flex-direction: row;
       width: 100%;
       height: 20rem;
+      border-top-left-radius: 1rem;
+      border-bottom-left-radius: 1rem;
     }
     &__project-thumb,
     &__project-content {
@@ -147,6 +149,10 @@
       display: flex;
       position: relative;
       padding-top: 30%;
+      border-radius: 1rem;
+      img {
+        border-radius: 1rem;
+      }
     }
     &__project-website {
       a {
@@ -164,6 +170,9 @@
       flex-direction: column;
       width: 45%;
       height: 30rem;
+      border-top-left-radius: 1rem;
+      border-top-right-radius: 1rem;
+      border-bottom-left-radius: 0;
     }
     &__project-thumb,
     &__project-content {
