@@ -4,7 +4,8 @@
       width: 40%;
       position: fixed;
       z-index: 11;
-      border-right: 1px solid $sidebar-border-right;
+      // border-right: 1px solid $sidebar-border-right;
+      border-right: 1px solid #fff;
       transform-origin: left;
       transform: translate(-100%);
       transition: all 0.3s ease-in-out;
