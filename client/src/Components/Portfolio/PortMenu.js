@@ -37,6 +37,7 @@ function PortMenu({ menuItem }) {
                     <h4>{stacks.stack5}</h4>
                     <h4>{stacks.stack6}</h4>
                     <h4>{stacks.stack7}</h4>
+                    <h4>{stacks.stack8}</h4>
                   </div>
                 )
               })}
