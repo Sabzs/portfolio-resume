@@ -4,7 +4,6 @@ import port3 from '../../assets/images/BrainFlix.png';
 import port4 from '../../assets/images/InStock-image.png';
 import port5 from '../../assets/images/port6.jpg'
 import port6 from '../../assets/images/port6.jpg';
-import port7 from '../../assets/images/port6.jpg';
 
 const PortfolioList = [
   {
@@ -62,6 +61,7 @@ const PortfolioList = [
         stack3: "Node.js",
         stack4: "Express",
         stack5: "Data-API",
+        stack6: "Heroku",
       }
     ]
   },
@@ -87,16 +87,22 @@ const PortfolioList = [
   },
   {
     id: 5,
-    category: 'React Js',
+    category: 'FullStack',
     link2: 'www.youtube.com',
     icon2: 'GitHub',
     image: port5,
-    title: 'MyTodo',
-    description: "",
+    title: 'Reading List',
+    description: "My first introduction to context API and Hooks was building this small Reading List app.",
     techStacks: [
       {
         stack1: "React.js",
-        stack2: "CSS/SCSS",
+        stack2: "Context API & Reducer",
+        stack3: "CSS/SCSS",
+        stack4: "Node.js",
+        stack5: "Express",
+        stack6: "MySQL",
+        stack7: "Sequelize",
+        stack8: "Heroku",
       }
     ]
   },
@@ -106,21 +112,6 @@ const PortfolioList = [
     link2: 'www.youtube.com',
     icon2: 'GitHub',
     image: port6,
-    title: 'Income Tracker',
-    description: "",
-    techStacks: [
-      {
-        stack1: "React.js",
-        stack2: "CSS/SCSS",
-      }
-    ]
-  },
-  {
-    id: 7,
-    category: 'React Js',
-    link2: 'www.youtube.com',
-    icon2: 'GitHub',
-    image: port7,
     title: 'Contact Listing',
     description: "",
     stack: ""
