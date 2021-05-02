@@ -2,7 +2,7 @@ import port1 from '../../assets/images/kidsCycle-image.png';
 import port2 from '../../assets/images/BandSite-image.png';
 import port3 from '../../assets/images/BrainFlix.png';
 import port4 from '../../assets/images/InStock-image.png';
-import port5 from '../../assets/images/port6.jpg'
+import port5 from '../../assets/images/reading-list.png'
 import port6 from '../../assets/images/port6.jpg';
 
 const PortfolioList = [
