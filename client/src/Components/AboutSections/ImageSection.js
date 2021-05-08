@@ -13,17 +13,17 @@ function ProfileDetails() {
       <div className="profileDetails__about-info" >
         <h4 >I am<span> Sabo Jise</span></h4>
         <p >
-          A Full Stack Web Developer with a background in music. I am passionate
-          about the ability to create and bring imaginations to
-          life through visual representation, creating something unique
+          A Summer2020 BrainStation Web Development Diploma Graduate.
+          I am passionate about the ability to create and bring imaginations
+          to life through visual representation, creating something unique
           that people can feel, interact and work with.
         </p>
-        <p>As a musician, I was based at various locations overseas,
+        <p>As a musician, I was based at various locations overseas for almost two decades,
         working for an international non-profit organization as a music
         educator and mentor with a focus and emphasis on community development,
         humanitarian work, and project management.
-        Being in a leadership role has honed leadership skills, communication
-        and collaborative work which are crucial for working in teams.
+        Being in a leadership role has honed my leadership skills, communication
+        and collaborative work which is crucial for working in teams.
         I am open-minded and focused on learning, growing and multiplying.
         </p>
         <p>I aim to leverage my prior music insights in my career-transition
