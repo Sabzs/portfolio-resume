@@ -1271,7 +1271,7 @@ body::-webkit-scrollbar-track {
     width: 100%;
   }
   .portCategories__filter-btn {
-    width: 6rem;
+    width: 6.5rem;
     padding: 0.6rem;
     margin: 0.5rem;
     border: none;
@@ -1300,19 +1300,32 @@ body::-webkit-scrollbar-track {
 
 @media (min-width: 31.25em) {
   .portCategories__filter-btn {
-    width: 6.5rem;
+    width: 7.3rem;
+  }
+}
+
+@media (min-width: 45em) {
+  .portCategories__filter-btn {
+    width: 8rem;
+  }
+}
+
+@media (min-width: 48em) {
+  .portCategories__filter-btn {
+    width: 8.3rem;
   }
 }
 
 @media (min-width: 64em) {
   .portCategories__filter-btn {
+    width: 8.8rem;
     font-size: calc(0.7125rem + ((1vw - 7.68px) * 0.6944));
   }
 }
 
 @media (min-width: 75em) {
   .portCategories__filter-btn {
-    width: 6.7rem;
+    width: 9rem;
     padding: 0.7rem;
     font-size: calc(0.7125rem + ((1vw - 7.68px) * 0.6944));
   }

@@ -87,7 +87,7 @@ const PortfolioList = [
   },
   {
     id: 5,
-    category: 'FullStack',
+    category: 'Context-Reducer',
     link1: 'https://books-2read.herokuapp.com',
     link2: 'https://github.com/Sabzs/Reading-List',
     icon1: 'Website',

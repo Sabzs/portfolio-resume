@@ -29,6 +29,11 @@
     @content;
   }
 }
+@mixin s-medium {
+  @media (min-width: $s-md) {
+    @content;
+  }
+}
 @mixin profile-d {
   @media (min-width: $pd) {
     @content;

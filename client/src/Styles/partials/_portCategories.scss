@@ -8,7 +8,7 @@
     width: 100%;
 
     &__filter-btn {
-      width: 6rem;
+      width: 6.5rem;
       padding: 0.6rem;
       margin: 0.5rem;
       border: none;
@@ -37,18 +37,28 @@
   //========//
   @include s-section {
     &__filter-btn {
-      width: 6.5rem;
+      width: 7.3rem;
     }
   }
-  // @include medium {}
+  @include s-medium {
+    &__filter-btn {
+      width: 8rem;
+    }
+  }
+  @include medium {
+    &__filter-btn {
+      width: 8.3rem;
+    }
+  }
   @include large {
     &__filter-btn {
+      width: 8.8rem;
       font-size: calc(0.7125rem + ((1vw - 7.68px) * 0.6944));
     }
   }
   @include xlarge {
     &__filter-btn {
-      width: 6.7rem;
+      width: 9rem;
       padding: 0.7rem;
       font-size: calc(0.7125rem + ((1vw - 7.68px) * 0.6944));
     }
