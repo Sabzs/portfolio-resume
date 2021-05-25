@@ -7,6 +7,7 @@ function SkillsSection({ skillslist }) {
       {skillslist.map((skills) => {
         return (
           <div className="skillsSection__skills-type" key={skills.id}>
+
             <div className="skillsSection__skills-list" >
               <h2 className="skillsSection__skills-list-header">{skills.category}</h2>
               <p className="skillsSection__skills-content">{skills.lang1}</p>
