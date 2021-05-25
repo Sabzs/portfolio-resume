@@ -4,8 +4,8 @@ function DownloadResume() {
 
   const onDownload = () => {
     const link = document.createElement("a");
-    link.download = `Sabo-J-Resume.v1.pdf`;
-    link.href = "/Sabo-J-Resume.v1.pdf";
+    link.download = `Sabo-J-Resume.pdf`;
+    link.href = "/Sabo-J-Resume.pdf";
     link.click();
   };
 
